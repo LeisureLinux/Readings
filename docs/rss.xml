@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Readings — RSS 订阅</title>
+    <link>https://read.freelamp.com/</link>
+    <description>LeisureLinux 的读书笔记、书评与阅读思考</description>
+    <language>zh-CN</language>
+    <atom:link href="https://read.freelamp.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>我的读书笔记怎么写——Readings 笔记模板</title>
+      <link>https://read.freelamp.com/articles/2026-08-05_reading-note-template/</link>
+      <guid isPermaLink="true">https://read.freelamp.com/articles/2026-08-05_reading-note-template/</guid>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
+      <author>LeisureLinux</author>
+      <description><![CDATA[Readings 读书笔记站点的第一篇文章，说明我写读书笔记的方法与模板：从选书、精读、记笔记到成文，强调『读了之后能带走什么』，并提供一份 Markdown 模板供日后每篇笔记复用。]]></description>
+      <category>阅读方法</category>
+      <category>读书笔记</category>
+      <category>方法论</category>
+      <category>Writing</category>
+    </item>
+  </channel>
+</rss>

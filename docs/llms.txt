@@ -1,0 +1,28 @@
+# LeisureLinux Readings
+
+> Reading notes, book reviews, and reflective commentary on technology, management, business, and the humanities. Written by LeisureLinux (Albert Xu) — a Linux kernel and infrastructure architect who has been an engineer and manager for over 30 years.
+
+## About
+
+LeisureLinux Readings is the reading-notebook companion to the main technical blog at freelamp.com. Every note distills a book's structure, core arguments, and practical takeaways, and adds the author's own critical perspective rather than mere summarizing. Topics span engineering, IT operations, organization design, management, business strategy, and personal effectiveness.
+
+All content is licensed under CC BY-SA 4.0.
+
+## Reading Notes
+
+<!-- New notes are appended here as they are published -->
+
+## How Notes Are Written
+
+- Pick books that can change a decision or an action.
+- Read for the argument's logic, not just its conclusions.
+- Structure each note around: what the book says → why it matters → what you can do differently.
+- Write for a reader who has not read the book, so each note stands alone.
+
+## Repository
+
+- Source: https://github.com/LeisureLinux/Readings
+- RSS Feed: https://read.freelamp.com/rss.xml
+- Author: LeisureLinux (Albert Xu)
+- License: CC BY-SA 4.0
+- Topics: reading-notes, book-reviews, technology, management, business, career

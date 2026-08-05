@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的读书笔记怎么写——Readings 笔记模板 — Readings</title>
+  <meta name="description" content="Readings 读书笔记站点的第一篇文章，说明我写读书笔记的方法与模板：从选书、精读、记笔记到成文，强调『读了之后能带走什么』，并提供一份 Markdown 模板供日后每篇笔记复用。">
+  <meta name="keywords" content="阅读方法, 读书笔记, 方法论, Writing">
+  <meta name="author" content="LeisureLinux">
+  <meta name="date" content="2026-08-05">
+  <link rel="canonical" href="https://read.freelamp.com/articles/2026-08-05_reading-note-template/">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Readings RSS 订阅" href="/rss.xml">
+  <!-- Open Graph：文章页 -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="我的读书笔记怎么写——Readings 笔记模板">
+  <meta property="og:description" content="Readings 读书笔记站点的第一篇文章，说明我写读书笔记的方法与模板：从选书、精读、记笔记到成文，强调『读了之后能带走什么』，并提供一份 Markdown 模板供日后每篇笔记复用。">
+  <meta property="og:url" content="https://read.freelamp.com/articles/2026-08-05_reading-note-template/">
+  <meta property="og:site_name" content="LeisureLinux Readings">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="article:published_time" content="2026-08-05">
+  <meta property="article:author" content="LeisureLinux">
+  <meta property="article:section" content="阅读方法">
+  <meta property="article:tag" content="阅读方法">
+  <meta property="article:tag" content="读书笔记">
+  <meta property="article:tag" content="方法论">
+  <meta property="article:tag" content="Writing">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="我的读书笔记怎么写——Readings 笔记模板">
+  <meta name="twitter:description" content="Readings 读书笔记站点的第一篇文章，说明我写读书笔记的方法与模板：从选书、精读、记笔记到成文，强调『读了之后能带走什么』，并提供一份 Markdown 模板供日后每篇笔记复用。">
+  <meta name="twitter:site" content="@LeisureLinux">
+  <meta name="twitter:creator" content="@LeisureLinux">
+
+  <!-- JSON-LD：TechArticle 结构化数据（SEO 核心） -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "我的读书笔记怎么写——Readings 笔记模板",
+  "description": "一份可直接套用的读书笔记模板：结构化拆解『这本书讲了什么』『为什么值得读』『我能带走什么』，把输入变成可复用的输出。",
+  "datePublished": "2026-08-05",
+  "dateModified": "2026-08-05",
+  "author": {
+    "@type": "Person",
+    "name": "LeisureLinux",
+    "url": "https://github.com/LeisureLinux"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LeisureLinux Readings",
+    "url": "https://read.freelamp.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://read.freelamp.com/articles/2026-08-05_reading-note-template/"
+  },
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "proficiencyLevel": "Expert",
+  "inLanguage": "zh-CN",
+  "keywords": "阅读方法, 读书笔记, 方法论, Writing"
+}
+  </script>
+
+  <!-- JSON-LD：BreadcrumbList 面包屑 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Readings",
+        "item": "https://read.freelamp.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "我的读书笔记怎么写——Readings 笔记模板",
+        "item": "https://read.freelamp.com/articles/2026-08-05_reading-note-template/"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+      background: #F9FAFB; color: #374151; line-height: 1.75;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    
+    nav {
+      background: #fff; border-bottom: 1px solid #E5E7EB;
+      padding: 12px 0; position: sticky; top: 0; z-index: 10;
+    }
+    nav .container { display: flex; align-items: center; justify-content: space-between; }
+    nav a { color: #059669; text-decoration: none; font-weight: 600; font-size: 14px; }
+    nav .brand { font-weight: 800; color: #111827; font-size: 15px; text-decoration: none; }
+    
+    .post-header { padding: 48px 0 32px; border-bottom: 1px solid #E5E7EB; margin-bottom: 32px; }
+    .post-date { font-size: 13px; color: #9CA3AF; font-weight: 600; letter-spacing: 1px; margin-bottom: 12px; }
+    .post-title { font-size: 28px; font-weight: 900; color: #111827; line-height: 1.3; letter-spacing: -0.5px; margin-bottom: 16px; }
+    .post-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .post-tags a {
+      background: #ECFDF5; color: #059669; padding: 3px 10px;
+      border-radius: 4px; font-size: 12px; font-weight: 600; text-decoration: none;
+    }
+    .post-tags a:hover { background: #D1FAE5; }
+    
+    .post-content { padding-bottom: 48px; }
+    .post-content h2 {
+      font-size: 22px; font-weight: 800; color: #111827;
+      margin: 40px 0 16px; padding-bottom: 8px;
+      border-bottom: 2px solid #059669;
+    }
+    .post-content h3 {
+      font-size: 17px; font-weight: 700; color: #111827;
+      margin: 28px 0 12px;
+    }
+    .post-content h4 {
+      font-size: 15px; font-weight: 700; color: #374151;
+      margin: 20px 0 10px;
+    }
+    .post-content p { margin-bottom: 16px; font-size: 15px; line-height: 1.9; }
+    .post-content ul, .post-content ol { margin: 0 0 16px 24px; }
+    .post-content li { margin-bottom: 8px; font-size: 15px; line-height: 1.8; }
+    .post-content strong { color: #059669; }
+    .post-content code {
+      background: #F3F4F6; color: #1F2937; padding: 2px 6px;
+      border-radius: 4px; font-size: 13px; font-family: 'SF Mono', Consolas, Monaco, monospace;
+    }
+    .post-content pre {
+      background: #1E293B; color: #E2E8F0; padding: 16px 20px;
+      border-radius: 8px; overflow-x: auto; margin-bottom: 20px;
+      font-size: 13px; line-height: 1.6;
+    }
+    .post-content pre code {
+      background: none; color: inherit; padding: 0; font-size: inherit;
+    }
+    .post-content table {
+      width: 100%; border-collapse: collapse; margin-bottom: 20px;
+      font-size: 13px;
+    }
+    .post-content th {
+      background: #059669; color: #fff; padding: 10px 12px;
+      text-align: left; font-weight: 700;
+    }
+    .post-content td {
+      padding: 8px 12px; border-bottom: 1px solid #E5E7EB;
+    }
+    .post-content tr:nth-child(even) td { background: #F9FAFB; }
+    .post-content blockquote {
+      border-left: 4px solid #059669; background: #ECFDF5;
+      padding: 12px 20px; margin: 0 0 20px; border-radius: 0 8px 8px 0;
+    }
+    .post-content hr { border: none; border-top: 1px solid #E5E7EB; margin: 32px 0; }
+    
+    .share-bar {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 14px;
+      padding: 22px 0 26px; margin-top: 8px;
+      border-top: 1px dashed #E5E7EB;
+    }
+    .share-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; border-radius: 50%;
+      border: none; cursor: pointer; padding: 0;
+      color: #fff; transition: transform .15s ease, box-shadow .15s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,.14);
+    }
+    .share-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,.20); }
+    .share-btn:active { transform: translateY(-1px); }
+    .share-btn svg { width: 24px; height: 24px; fill: #fff; }
+    .ico-wx { background: #07C160; }
+    .ico-weibo { background: #E6162D; }
+    .ico-x { background: #000; }
+
+    .post-comments {
+      margin-top: 40px; padding: 28px 28px 40px;
+      border: 1px solid #D1FAE5; border-radius: 16px;
+      background: #FFFFFF; box-shadow: 0 4px 24px rgba(5,150,105,0.08);
+    }
+    .comments-head {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 6px;
+    }
+    .comments-head .comments-badge {
+      font-size: 12px; font-weight: 800; color: #fff; background: #059669;
+      padding: 3px 10px; border-radius: 999px; letter-spacing: .5px;
+    }
+    .comments-title {
+      font-size: 20px; font-weight: 900; color: #059669;
+      margin: 0;
+    }
+    .comments-sub {
+      font-size: 13px; color: #6B7280; margin-bottom: 20px;
+      padding-bottom: 16px; border-bottom: 1px solid #E5E7EB;
+    }
+    .giscus { min-height: 320px; }
+
+    footer {
+      text-align: center; padding: 32px 0; color: #9CA3AF;
+      font-size: 13px; border-top: 1px solid #E5E7EB;
+    }
+    footer a { color: #059669; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a class="brand" href="/">📚 Readings</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <article itemscope itemtype="https://schema.org/TechArticle">
+      <div class="post-header">
+        <div class="post-date" itemprop="datePublished" content="2026-08-05">2026-08-05</div>
+        <h1 class="post-title" itemprop="headline">我的读书笔记怎么写——Readings 笔记模板</h1>
+        <div class="post-tags"><a itemprop="keywords" href="/tags/%E9%98%85%E8%AF%BB%E6%96%B9%E6%B3%95/">阅读方法</a><a itemprop="keywords" href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">读书笔记</a><a itemprop="keywords" href="/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/">方法论</a><a itemprop="keywords" href="/tags/Writing/">Writing</a></div>
+        <meta itemprop="author" content="LeisureLinux">
+        <meta itemprop="license" content="https://creativecommons.org/licenses/by-sa/4.0/">
+      </div>
+
+      <div class="post-content" itemprop="articleBody">
+<p>
+开这个 <code>read.freelamp.com</code> 读书笔记站点，是想把「读完一本书之后真正想明白了什么」沉淀下来。这篇既是站点第一篇，也是一份<strong>可复用的笔记模板</strong>——以后每一篇读书笔记，我都会尽量照着这个结构来写。</p>
+<p>一句话总结：<strong>读书是输入，笔记是加工，写作是输出。三者连起来，才算真正读了一本书。</strong></p>
+<p>---</p>
+<h2>为什么另开一个站点</h2>
+<p>主博客 <a href="https://freelamp.com">freelamp.com</a> 写的是 Linux 底层机制、DevSecOps 与基础架构这类深度技术。而读书这件事，题材横跨技术、管理与人文，混在一起会让两边都变杂。于是拆成两条线：</p>
+<p><ul>
+<li><strong>Lore</strong>（freelamp.com）→ 技术深度写作</li>
+<li><strong>Readings</strong>（read.freelamp.com）→ 读书笔记与书评</li>
+</ul>
+分开之后，两个主题各自独立、互不干扰，在 SEO 和可读性上也更清晰。</p>
+<h2>读书笔记的五步法</h2>
+<p>1. <strong>选书</strong>：优先选「能改变决策或行动」的书，兼顾深度与通识；
+2. <strong>精读</strong>：先通读抓主线，再回到关键章节做结构化拆解；
+3. <strong>记笔记</strong>：记录作者的<em>论证逻辑</em>，而不是只记结论；
+4. <strong>成文</strong>：面向「另一个想读这本书的人」来写，做到可独立阅读；
+5. <strong>更新</strong>：用 Git + AI 工具沉淀，随读随更。</p>
+<h2>笔记的统一模板</h2>
+<p>每篇笔记我会尽量包含以下小节（不硬凑，长了就拆多篇）：</p>
+<p><ul>
+<li><strong>一句话总结</strong>：用一句话讲清这本书最核心的主张；</li>
+<li><strong>这本书讲了什么</strong>：主线结构 + 关键章节拆解；</li>
+<li><strong>核心观点与论证</strong>：作者的逻辑链，而不是金句堆砌；</li>
+<li><strong>批判性思考</strong>：我同意什么、反对什么、书里哪里不足；</li>
+<li><strong>对我的启示 / 可落地动作</strong>：读完能带走什么，能做什么不一样的事；</li>
+<li><strong>延伸阅读</strong>：相关书目、文章或主题。</li>
+</ul>
+<h2>Markdown 模板</h2></p>
+<pre><code class="markdown"># 《书名》——一句话副标题</p>
+<p>一句话总结：……</p>
+<p>---</p>
+<p><h2>这本书讲了什么</h2>
+<h2>核心观点与论证</h2>
+<h2>批判性思考</h2>
+<h2>对我的启示 / 可落地动作</h2>
+<h2>延伸阅读</h2>
+</code></pre>
+<p><blockquote>模板不是枷锁。真正重要的是：<strong>这篇文章有没有让读者（包括未来的自己）读完就有收获。</strong></blockquote>
+---</p>
+<h2>发布方式</h2>
+<p>每一篇笔记以 <code>YYYY-MM-DD_slug/</code> 目录形式放在 <a href="https://github.com/LeisureLinux/Readings">LeisureLinux/Readings</a> 仓库的 <code>articles/</code> 下，由 <code>build.py</code> 自动生成静态站点并部署到 GitHub Pages（<code>read.freelamp.com</code>）。作者即仓库维护者，想评论或纠错，欢迎在仓库提 Issue 或 Discussion。</p>
+<p>愿我们读完每一本好书，都离自由更近一点。🕊️
+</p>
+      </div>
+    </article>
+
+    <!-- 社交媒体分享栏：文章结尾、评论区上方（品牌小图标） -->
+    <div class="share-bar">
+      <button type="button" class="share-btn ico-wx" onclick="shareWechat()" title="微信扫码分享" aria-label="分享到微信">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .718-.098 11.223 11.223 0 0 0 2.836.379c.276 0 .543-.027.811-.05-.03-.21-.049-.424-.049-.642 0-3.893 3.567-7.05 7.964-7.05.158 0 .313.012.469.02C17.367 5.119 13.484 2.188 8.691 2.188zm-2.51 4.925c.653 0 1.182.523 1.182 1.168 0 .645-.529 1.168-1.182 1.168-.653 0-1.182-.523-1.182-1.168 0-.645.529-1.168 1.182-1.168zm5.925 0c.653 0 1.182.523 1.182 1.168 0 .645-.529 1.168-1.182 1.168-.653 0-1.182-.523-1.182-1.168 0-.645.529-1.168 1.182-1.168zM20.985 12.242c0 3.542-3.319 6.414-7.414 6.414-.72 0-1.416-.09-2.064-.256a.63.63 0 0 0-.524.07l-1.386.81a.28.28 0 0 1-.122.04.215.215 0 0 1-.212-.215c0-.052.021-.104.035-.154l.285-1.079a.43.43 0 0 0-.156-.485C8.082 16.811 7.1 15.548 7.1 14.057c0-3.542 3.319-6.414 7.414-6.414 4.095 0 6.471 2.872 6.471 6.414zm-2.894-.646c-.476 0-.862-.382-.862-.852 0-.47.386-.852.862-.852.476 0 .862.382.862.852 0 .47-.386.852-.862.852zm-3.517 0c-.476 0-.862-.382-.862-.852 0-.47.386-.852.862-.852.476 0 .862.382.862.852 0 .47-.386.852-.862.852z"/></svg>
+      </button>
+      <button type="button" class="share-btn ico-weibo" onclick="openShare('https://service.weibo.com/share/share.php?url='+encodeURIComponent(SHARE.url)+'&title='+encodeURIComponent(SHARE.title))" title="分享到微博" aria-label="分享到微博">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10.996 1.885c-4.944.047-9.071 3.731-9.993 8.484-.984 5.069 3.143 9.193 8.787 9.193 4.832 0 8.752-3.375 9.755-7.884.505-2.274.05-4.487-1.537-6.033-1.37-1.336-3.36-1.947-5.506-1.761h-1.506zM9.173 16.142c-3.227.013-5.84-1.826-5.84-4.107 0-2.281 2.614-4.119 5.84-4.107 3.227.011 5.84 1.849 5.84 4.13 0 2.281-2.613 4.071-5.84 4.084zm0-1.554c2.42.011 4.38-1.14 4.38-2.546 0-1.406-1.96-2.548-4.38-2.548-2.42 0-4.38 1.142-4.38 2.548 0 1.406 1.96 2.535 4.38 2.546zm0-3.826c1.091 0 1.975.573 1.975 1.28s-.884 1.28-1.975 1.28-1.975-.573-1.975-1.28.884-1.28 1.975-1.28zm4.631-5.902c-1.396-.527-1.093-2.264.411-2.348 1.504-.084 2.331 1.546.913 2.213-.354.166-.763.225-1.324.135zm-1.324 1.544c2.279.15 3.536 1.782 2.829 3.549-.707 1.768-3.195 2.484-5.475 2.335-2.279-.15-3.536-1.782-2.829-3.549.708-1.768 3.196-2.484 5.475-2.335zM14.972 3.394c.694.055 1.224.223 1.59.504.366.28.502.651.407 1.112-.095.461-.489.648-.783.701-.295.054-.747-.014-1.356-.203-.609-.188-.799-.642-.569-1.361.23-.72.447-1.065.711-1.002zm-3.977.238c-2.273.022-4.576 1.112-6.205 2.827-1.319 1.388-2.102 3.085-2.178 4.88-.077 1.795.585 3.617 1.738 5.124 1.153 1.506 2.841 2.511 4.709 2.858 1.868.348 3.876-.042 5.533-1.065 1.656-1.022 2.884-2.559 3.421-4.369.537-1.81.417-3.791-.211-5.344-.629-1.554-1.846-2.832-3.476-3.602-1.233-.583-2.549-.847-3.834-.841z"/></svg>
+      </button>
+      <button type="button" class="share-btn ico-x" onclick="openShare('https://twitter.com/intent/tweet?text='+encodeURIComponent(SHARE.title+' '+SHARE.url))" title="分享到 X" aria-label="分享到 X">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+      </button>
+    </div>
+
+    <!-- giscus 点评（GitHub Discussions 驱动） -->
+    <section class="post-comments" id="comments">
+      <div class="comments-head">
+        <h2 class="comments-title">点评与讨论</h2>
+        <span class="comments-badge">GITHUB 账号登录</span>
+      </div>
+      <p class="comments-sub">有疑问、有补充、有不同看法？欢迎留下你的点评，一起把技术聊透。👇</p>
+      <div class="giscus" id="giscus">
+        <script src="https://giscus.app/client.js"
+          data-repo="LeisureLinux/lore"
+          data-repo-id="R_kgDOTpxbbg"
+          data-category="General"
+          data-category-id="DIC_kwDOTpxbbs4DCp0C"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="preferred_color_scheme"
+          data-lang="zh-CN"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+        </script>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 LeisureLinux · <a href="https://github.com/LeisureLinux/Readings">GitHub</a> · <a href="/about-readings.html">关于 Readings</a> · <a href="/rss.xml">RSS 订阅</a></p>
+      <p style="margin-top: 8px; font-size: 12px;">本文以 <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> 协议开源</p>
+    </div>
+  </footer>
+
+  <script>
+    var SHARE = {
+      url: "https://read.freelamp.com/articles/2026-08-05_reading-note-template/",
+      title: "\u6211\u7684\u8bfb\u4e66\u7b14\u8bb0\u600e\u4e48\u5199\u2014\u2014Readings \u7b14\u8bb0\u6a21\u677f"
+    };
+    function openShare(u) { window.open(u, '_blank', 'noopener,width=680,height=560'); }
+    function shareWechat() { window.open('https://api.qrserver.com/v1/create-qr-code/?size=320x320&margin=10&data=' + encodeURIComponent(SHARE.url), 'wechat_qr', 'width=380,height=420,noopener'); }
+  </script>
+</body>
+</html>
