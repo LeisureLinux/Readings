@@ -23,6 +23,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://read.freelamp.com/articles/2026-08-05_mbti-intj-one-person-company/</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://read.freelamp.com/articles/2026-08-05_first-in-last-out/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -86,6 +92,31 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://read.freelamp.com/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/One%20Person%20Company/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/MBTI/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E6%95%88%E7%8E%87/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E7%8B%AC%E7%AB%8B%E5%BC%80%E5%8F%91/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://read.freelamp.com/tags/%E5%8D%B1%E6%9C%BA%E7%AE%A1%E7%90%86/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -132,11 +163,6 @@
   </url>
   <url>
     <loc>https://read.freelamp.com/tags/%E9%80%86%E5%90%91%E6%80%9D%E7%BB%B4/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://read.freelamp.com/tags/%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
