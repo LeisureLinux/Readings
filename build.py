@@ -448,10 +448,10 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
       <p class="comments-sub">有疑问、有补充、有不同看法？欢迎留下你的点评，一起把技术聊透。👇</p>
       <div class="giscus" id="giscus">
         <script src="https://giscus.app/client.js"
-          data-repo="LeisureLinux/lore"
-          data-repo-id="R_kgDOTpxbbg"
+          data-repo="LeisureLinux/Readings"
+          data-repo-id="R_kgDOTuKgSA"
           data-category="General"
-          data-category-id="DIC_kwDOTpxbbs4DCp0C"
+          data-category-id="DIC_kwDOTuKgSM4DCr7V"
           data-mapping="pathname"
           data-strict="0"
           data-reactions-enabled="1"
