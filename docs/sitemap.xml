@@ -23,6 +23,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://read.freelamp.com/articles/2026-08-05_first-in-last-out/</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://read.freelamp.com/articles/2026-08-05_reading-note-template/</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
@@ -76,6 +82,26 @@
   </url>
   <url>
     <loc>https://read.freelamp.com/tags/%E5%95%86%E4%B8%9A/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E5%8D%B1%E6%9C%BA%E7%AE%A1%E7%90%86/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E7%BB%84%E7%BB%87%E8%A1%8C%E4%B8%BA/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E4%BF%A1%E4%BB%BB/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E5%86%B3%E7%AD%96/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
