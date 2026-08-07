@@ -11,7 +11,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://read.freelamp.com/articles/2026-08-07_rspamd-false-positive-newsletter/</loc>
+    <loc>https://read.freelamp.com/articles/2026-08-07_mckinsey-2026-book-recommendations/</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -182,36 +182,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://read.freelamp.com/tags/%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://read.freelamp.com/tags/rspamd/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://read.freelamp.com/tags/%E5%8F%8D%E5%9E%83%E5%9C%BE/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://read.freelamp.com/tags/Postfix/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://read.freelamp.com/tags/Dovecot/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://read.freelamp.com/tags/%E6%8E%92%E9%9A%9C%E8%AE%B0%E5%BD%95/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://read.freelamp.com/tags/%E9%98%85%E8%AF%BB%E6%96%B9%E6%B3%95/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -298,6 +268,36 @@
   </url>
   <url>
     <loc>https://read.freelamp.com/tags/%E9%80%86%E5%90%91%E6%80%9D%E7%BB%B4/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E4%B9%A6%E5%8D%95/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E9%BA%A6%E8%82%AF%E9%94%A1/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/Book%20List/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/McKinsey/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/AI/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E4%BA%BA%E6%96%87/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

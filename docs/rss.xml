@@ -7,18 +7,22 @@
     <language>zh-CN</language>
     <atom:link href="https://read.freelamp.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>从 Junk 文件夹里救回正常邮件：rspamd 误判治理实录</title>
-      <link>https://read.freelamp.com/articles/2026-08-07_rspamd-false-positive-newsletter/</link>
-      <guid isPermaLink="true">https://read.freelamp.com/articles/2026-08-07_rspamd-false-positive-newsletter/</guid>
+      <title>麦肯锡 2026 年度书单（What to Read Next）——近百本精选图书导读</title>
+      <link>https://read.freelamp.com/articles/2026-08-07_mckinsey-2026-book-recommendations/</link>
+      <guid isPermaLink="true">https://read.freelamp.com/articles/2026-08-07_mckinsey-2026-book-recommendations/</guid>
       <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
       <author>LeisureLinux</author>
-      <description><![CDATA[自建 Postfix+Dovecot+rspamd 邮件服务器上，McKinsey/LinkedIn/dev.to/Debian 列表等正常订阅被误判为垃圾。本文记录根因分析（ESP 子域 envelope sender、列表 To 地址、供应商代发触发误判符号）、白名单与组合规则配置、验证分数前后对比，以及 Junk 文件夹重新过滤与回滚步骤。]]></description>
-      <category>邮件服务器</category>
-      <category>rspamd</category>
-      <category>反垃圾</category>
-      <category>Postfix</category>
-      <category>Dovecot</category>
-      <category>排障记录</category>
+      <description><![CDATA[基于 McKinsey Global Publishing《What to Read Next: McKinsey's 2026 curated book recommendations》提炼的年度书单。覆盖人工智能、传记与回忆录、商业、虚构、健康、历史、个人成长、政治、可持续发展与职场文化十类，约百本图书。每本书保留英文原书名、作者与出版社，配中文导读摘要与麦肯锡内外推荐人，并附个人的优先阅读排序。]]></description>
+      <category>书单</category>
+      <category>麦肯锡</category>
+      <category>读书笔记</category>
+      <category>书评</category>
+      <category>Book List</category>
+      <category>McKinsey</category>
+      <category>AI</category>
+      <category>领导力</category>
+      <category>商业</category>
+      <category>人文</category>
     </item>
 
     <item>
