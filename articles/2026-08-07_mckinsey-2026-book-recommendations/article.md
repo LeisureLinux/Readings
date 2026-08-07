@@ -346,16 +346,16 @@ NASA Psyche 任务首席科学家 Lindy Elkins-Tanton 讲如何在压力下建�
 
 按我自己的 Linux、DevSecOps、系统与工程背景，如果只能先读几本，我会这样排：
 
-- **《The Infinity Machine》**（Mallaby）<br>Demis Hassabis 传记，超级智能竞赛的现场，2026 年最该读的 AI 书。
-- **《The Coming Wave》**（Suleyman）<br>AI 时代权力与治理的地图，常读常新。
-- **《Enshittification》**（Doctorow）<br>用工程化语言讲清平台如何"烂掉"，与技术运维视角天然契合。
-- **《Inside the Box》**（Epstein）<br>约束让人更好的论证，正好呼应工程里的"简单与克制"。
-- **《The Origins of Efficiency》**（Potter，Stripe Press）<br>效率的工程史，Stripe 出品，质量有保障。
-- **《The Unaccountability Machine》**（Davies）<br>大系统为何做出坏决策，系统工程从业者会心一笑。
-- **《Breakneck: China's Quest to Engineer the Future》**（Wang）<br>从技术工程视角理解中国的"未来工程"，跟我的技术背景高度相关。
-- **《The High Frontier》**（O'Neill）<br>太空殖民的古典工程幻想，读起来很爽。
-- **《A Swim in a Pond in the Rain》**（Saunders）<br>写作与阅读的 master class，对任何想写清楚的人都有用。
-- **《Foundation》**（Asimov）<br>科幻经典，长期主义与预测的绝佳寓言。
+- **《The Infinity Machine》**（Sebastian Mallaby）<br>出版社：Penguin Press / Penguin Random House<br>推荐人：Yuval Atsmon（McKinsey 高级合伙人兼 CFO）、Michael Birshan（McKinsey 高级合伙人）、Stephen Hodges（Efekta Education CEO）<br>简介：DeepMind 创始人 Demis Hassabis 的传记，超级智能竞赛的现场，2026 年最该读的 AI 书。
+- **《The Coming Wave》**（Mustafa Suleyman with Michael Bhaskar）<br>出版社：Crown / Penguin Random House<br>推荐人：Austin Gallagher（Beneath The Waves 创始人兼 CEO）<br>简介：AI 时代权力与治理的地图，常读常新。
+- **《Enshittification》**（Cory Doctorow）<br>出版社：MCD / Macmillan Publishers<br>推荐人：Jimmy Wales（维基百科联合创始人）<br>简介：用工程化语言讲清平台如何一步步“烂掉”，与技术运维视角天然契合。
+- **《Inside the Box》**（David Epstein）<br>出版社：Riverhead Books / Penguin Random House<br>推荐人：Peter Orszag（Lazard CEO 兼董事长）<br>简介：约束让人更好的论证，正好呼应工程里的“简单与克制”。
+- **《The Origins of Efficiency》**（Brian Potter）<br>出版社：Stripe Press<br>推荐人：Michael Birshan（McKinsey 高级合伙人）<br>简介：效率的工程史，Stripe 出品，质量有保障。
+- **《The Unaccountability Machine》**（Dan Davies）<br>出版社：University of Chicago Press<br>推荐人：Marina Nitze（危机工程师，Layer Aleph 合伙人）<br>简介：大系统为何做出坏决策，系统工程从业者会心一笑。
+- **《Breakneck: China's Quest to Engineer the Future》**（Dan Wang）<br>出版社：W. W. Norton & Company<br>推荐人：Enrico Letta（意大利前总理）、Sandra Peter（悉尼大学副教授）<br>简介：从技术工程视角理解中国的“未来工程”，跟我的技术背景高度相关。
+- **《The High Frontier》**（Gerard K. O'Neill）<br>出版社：Space Studies Institute<br>推荐人：Andreas Schindler（DNL Deep Neuron Lab 创始人兼 CEO）<br>简介：太空殖民的古典工程幻想，读起来很爽。
+- **《A Swim in a Pond in the Rain》**（George Saunders）<br>出版社：Random House Trade Paperbacks / Penguin Random House<br>推荐人：Kat Downs Mulder（Yahoo News 高级副总裁）<br>简介：写作与阅读的 master class，对任何想写清楚的人都有用。
+- **《Foundation》**（Isaac Asimov）<br>出版社：Del Rey / Penguin Random House<br>推荐人：Carolyn Dewar（McKinsey 高级合伙人）<br>简介：科幻经典，长期主义与预测的绝佳寓言。
 
 > 想看哪几本？欢迎在评论区聊聊你的选择，或者提一本你最近在读、觉得值得推荐的书。
 
