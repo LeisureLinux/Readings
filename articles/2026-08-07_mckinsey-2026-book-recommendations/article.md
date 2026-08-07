@@ -346,16 +346,16 @@ NASA Psyche 任务首席科学家 Lindy Elkins-Tanton 讲如何在压力下建�
 
 按我自己的 Linux、DevSecOps、系统与工程背景，如果只能先读几本，我会这样排：
 
-1. **《The Infinity Machine》**（Mallaby）—— Demis Hassabis 传记，超级智能竞赛的现场，2026 年最该读的 AI 书。
-2. **《The Coming Wave》**（Suleyman）—— AI 时代权力与治理的地图，常读常新。
-3. **《Enshittification》**（Doctorow）—— 用工程化语言讲清平台如何"烂掉"，与技术运维视角天然契合。
-4. **《Inside the Box》**（Epstein）—— 约束让人更好的论证，正好呼应工程里的"简单与克制"。
-5. **《The Origins of Efficiency》**（Potter，Stripe Press）—— 效率的工程史，Stripe 出品，质量有保障。
-6. **《The Unaccountability Machine》**（Davies）—— 大系统为何做出坏决策，系统工程从业者会心一笑。
-7. **《Breakneck: China's Quest to Engineer the Future》**（Wang）—— 从技术工程视角理解中国的"未来工程"，跟我的技术背景高度相关。
-8. **《The High Frontier》**（O'Neill）—— 太空殖民的古典工程幻想，读起来很爽。
-9. **《A Swim in a Pond in the Rain》**（Saunders）—— 写作与阅读的 master class，对任何想写清楚的人都有用。
-10. **《Foundation》**（Asimov）—— 科幻经典，长期主义与预测的绝佳寓言。
+- **《The Infinity Machine》**（Mallaby）<br>Demis Hassabis 传记，超级智能竞赛的现场，2026 年最该读的 AI 书。
+- **《The Coming Wave》**（Suleyman）<br>AI 时代权力与治理的地图，常读常新。
+- **《Enshittification》**（Doctorow）<br>用工程化语言讲清平台如何"烂掉"，与技术运维视角天然契合。
+- **《Inside the Box》**（Epstein）<br>约束让人更好的论证，正好呼应工程里的"简单与克制"。
+- **《The Origins of Efficiency》**（Potter，Stripe Press）<br>效率的工程史，Stripe 出品，质量有保障。
+- **《The Unaccountability Machine》**（Davies）<br>大系统为何做出坏决策，系统工程从业者会心一笑。
+- **《Breakneck: China's Quest to Engineer the Future》**（Wang）<br>从技术工程视角理解中国的"未来工程"，跟我的技术背景高度相关。
+- **《The High Frontier》**（O'Neill）<br>太空殖民的古典工程幻想，读起来很爽。
+- **《A Swim in a Pond in the Rain》**（Saunders）<br>写作与阅读的 master class，对任何想写清楚的人都有用。
+- **《Foundation》**（Asimov）<br>科幻经典，长期主义与预测的绝佳寓言。
 
 > 想看哪几本？欢迎在评论区聊聊你的选择，或者提一本你最近在读、觉得值得推荐的书。
 
