@@ -711,8 +711,18 @@ def markdown_to_html(md_content):
     html = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', r'<a href="\2">\1</a>', html)
     
     # 列表
+    # 无序列表
     html = re.sub(r'^- (.+)$', r'<li>\1</li>', html, flags=re.MULTILINE)
     html = re.sub(r'(<li>.*</li>\n?)+', lambda m: '<ul>\n' + m.group(0) + '</ul>', html)
+    # 有序列表：把连续的 "N. 条目" 转成 <ol><li>…</li></ol>，编号交给浏览器自动渲染
+    # （不保留 N. 前缀，避免与 <ol> 默认序号重复）
+    html = re.sub(
+        r'(?:^\d+\.\s+.+$\n?)+',
+        lambda m: '<ol>\n' + '\n'.join(
+            '<li>' + re.sub(r'^\d+\.\s+', '', ln) + '</li>'
+            for ln in m.group(0).rstrip('\n').split('\n')
+        ) + '\n</ol>',
+        html, flags=re.MULTILINE)
     
     # 引用块（支持连续多行，内容保留行内格式）
     html = re.sub(
@@ -729,6 +739,7 @@ def markdown_to_html(md_content):
     html = re.sub(r'<p>(<h[1-6]>.*?</h[1-6]>)</p>', r'\1', html)
     html = re.sub(r'<p>(<pre>.*?</pre>)</p>', r'\1', html, flags=re.DOTALL)
     html = re.sub(r'<p>(<ul>.*?</ul>)</p>', r'\1', html, flags=re.DOTALL)
+    html = re.sub(r'<p>(<ol>.*?</ol>)</p>', r'\1', html, flags=re.DOTALL)
     html = re.sub(r'<p>(<table>.*?</table>)</p>', r'\1', html, flags=re.DOTALL)
     html = re.sub(r'<p>(<blockquote>.*?</blockquote>)</p>', r'\1', html, flags=re.DOTALL)
     
