@@ -11,6 +11,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://read.freelamp.com/articles/2026-08-19_seven-rules-career-first-year/</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://read.freelamp.com/articles/2026-08-07_mckinsey-2026-book-recommendations/</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -182,6 +188,36 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://read.freelamp.com/tags/%E8%81%8C%E5%9C%BA/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E8%81%8C%E4%B8%9A%E8%A7%84%E5%88%92/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/Forbes/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/AI/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E6%B1%82%E8%81%8C/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E8%AF%91%E6%96%87/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://read.freelamp.com/tags/%E9%98%85%E8%AF%BB%E6%96%B9%E6%B3%95/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -288,11 +324,6 @@
   </url>
   <url>
     <loc>https://read.freelamp.com/tags/McKinsey/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://read.freelamp.com/tags/AI/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
