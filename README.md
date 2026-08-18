@@ -16,6 +16,7 @@
 
 | 日期 | 标题 | 领域 |
 |------|------|------|
+| 2026-08-19 | [专家警告的中国 AI 模型来了——GLM 5.3 与开源模型的双刃剑](https://read.freelamp.com/articles/2026-08-19_zai-glm53-open-weight-cyber/) | AI · 网络安全 · 译文 |
 | 2026-08-19 | [职业生涯第一年，七个新的成功法则——Forbes 职场指南](https://read.freelamp.com/articles/2026-08-19_seven-rules-career-first-year/) | 职场 · 译文 |
 | 2026-08-05 | [我的读书笔记怎么写——Readings 笔记模板](https://read.freelamp.com/articles/2026-08-05_reading-note-template/) | 阅读方法 · 方法论 |
 

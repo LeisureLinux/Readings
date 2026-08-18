@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>专家多次警告的这款强大中国 AI 模型，来了——GLM 5.3 与开源模型的攻防双刃（译文） — Readings</title>
+  <meta name="description" content="全文翻译 WIRED（2026-08-18，Jorge Garay）《The Powerful Chinese AI Model Experts Warned About Is Here》。解读 Z.ai 开源模型 GLM 5.3 的能力边界、OpenVuln 漏洞扫描服务、OpenAI 总裁 Brockman 对 H">
+  <meta name="keywords" content="AI, 网络安全, 开源模型, WIRED, Z.ai, 译文">
+  <meta name="author" content="LeisureLinux">
+  <meta name="date" content="2026-08-19">
+  <link rel="canonical" href="https://read.freelamp.com/articles/2026-08-19_zai-glm53-open-weight-cyber/">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="Readings RSS 订阅" href="/rss.xml">
+  <!-- Open Graph：文章页 -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="专家多次警告的这款强大中国 AI 模型，来了——GLM 5.3 与开源模型的攻防双刃（译文）">
+  <meta property="og:description" content="全文翻译 WIRED（2026-08-18，Jorge Garay）《The Powerful Chinese AI Model Experts Warned About Is Here》。解读 Z.ai 开源模型 GLM 5.3 的能力边界、OpenVuln 漏洞扫描服务、OpenAI 总裁 Brockman 对 H">
+  <meta property="og:url" content="https://read.freelamp.com/articles/2026-08-19_zai-glm53-open-weight-cyber/">
+  <meta property="og:site_name" content="LeisureLinux Readings">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="article:published_time" content="2026-08-19">
+  <meta property="article:author" content="LeisureLinux">
+  <meta property="article:section" content="AI">
+  <meta property="article:tag" content="AI">
+  <meta property="article:tag" content="网络安全">
+  <meta property="article:tag" content="开源模型">
+  <meta property="article:tag" content="WIRED">
+  <meta property="article:tag" content="Z.ai">
+  <meta property="article:tag" content="译文">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="专家多次警告的这款强大中国 AI 模型，来了——GLM 5.3 与开源模型的攻防双刃（译文）">
+  <meta name="twitter:description" content="全文翻译 WIRED（2026-08-18，Jorge Garay）《The Powerful Chinese AI Model Experts Warned About Is Here》。解读 Z.ai 开源模型 GLM 5.3 的能力边界、OpenVuln 漏洞扫描服务、OpenAI 总裁 Brockman 对 H">
+  <meta name="twitter:site" content="@LeisureLinux">
+  <meta name="twitter:creator" content="@LeisureLinux">
+
+  <!-- JSON-LD：TechArticle 结构化数据（SEO 核心） -->
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "专家多次警告的这款强大中国 AI 模型，来了——GLM 5.3 与开源模型的攻防双刃（译文）",
+  "description": "WIRED 译文：Z.ai 发布开源权重模型 GLM 5.3，编码与网络安全能力逼近 Anthropic/OpenAI 顶级模型，并附带漏洞扫描服务 OpenVuln。在 AI 智能体'暴走'入侵 Hugging Face 等事件之后，强大的开源模型既是防御利器，也是双用途风险——中美开源 AI 的攻防博弈正在加速。",
+  "datePublished": "2026-08-19",
+  "dateModified": "2026-08-19",
+  "author": {
+    "@type": "Person",
+    "name": "LeisureLinux",
+    "url": "https://github.com/LeisureLinux"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "LeisureLinux Readings",
+    "url": "https://read.freelamp.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://read.freelamp.com/articles/2026-08-19_zai-glm53-open-weight-cyber/"
+  },
+  "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "proficiencyLevel": "Expert",
+  "inLanguage": "zh-CN",
+  "keywords": "AI, 网络安全, 开源模型, WIRED, Z.ai, 译文"
+}
+  </script>
+
+  <!-- JSON-LD：BreadcrumbList 面包屑 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Readings",
+        "item": "https://read.freelamp.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "专家多次警告的这款强大中国 AI 模型，来了——GLM 5.3 与开源模型的攻防双刃（译文）",
+        "item": "https://read.freelamp.com/articles/2026-08-19_zai-glm53-open-weight-cyber/"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+      background: #F9FAFB; color: #374151; line-height: 1.75;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+    
+    nav {
+      background: #fff; border-bottom: 1px solid #E5E7EB;
+      padding: 12px 0; position: sticky; top: 0; z-index: 10;
+    }
+    nav .container { display: flex; align-items: center; justify-content: space-between; }
+    nav a { color: #059669; text-decoration: none; font-weight: 600; font-size: 14px; }
+    nav .brand { font-weight: 800; color: #111827; font-size: 15px; text-decoration: none; }
+    
+    .post-header { padding: 48px 0 32px; border-bottom: 1px solid #E5E7EB; margin-bottom: 32px; }
+    .post-date { font-size: 13px; color: #9CA3AF; font-weight: 600; letter-spacing: 1px; margin-bottom: 12px; }
+    .post-title { font-size: 28px; font-weight: 900; color: #111827; line-height: 1.3; letter-spacing: -0.5px; margin-bottom: 16px; }
+    .post-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .post-tags a {
+      background: #ECFDF5; color: #059669; padding: 3px 10px;
+      border-radius: 4px; font-size: 12px; font-weight: 600; text-decoration: none;
+    }
+    .post-tags a:hover { background: #D1FAE5; }
+    
+    .post-content { padding-bottom: 48px; }
+    .post-content h2 {
+      font-size: 22px; font-weight: 800; color: #111827;
+      margin: 40px 0 16px; padding-bottom: 8px;
+      border-bottom: 2px solid #059669;
+    }
+    .post-content h3 {
+      font-size: 17px; font-weight: 700; color: #111827;
+      margin: 28px 0 12px;
+    }
+    .post-content h4 {
+      font-size: 15px; font-weight: 700; color: #374151;
+      margin: 20px 0 10px;
+    }
+    .post-content p { margin-bottom: 16px; font-size: 15px; line-height: 1.9; }
+    .post-content ul, .post-content ol { margin: 0 0 16px 24px; }
+    .post-content li { margin-bottom: 8px; font-size: 15px; line-height: 1.8; }
+    .post-content strong { color: #059669; }
+    .post-content code {
+      background: #F3F4F6; color: #1F2937; padding: 2px 6px;
+      border-radius: 4px; font-size: 13px; font-family: 'SF Mono', Consolas, Monaco, monospace;
+    }
+    .post-content pre {
+      background: #1E293B; color: #E2E8F0; padding: 16px 20px;
+      border-radius: 8px; overflow-x: auto; margin-bottom: 20px;
+      font-size: 13px; line-height: 1.6;
+    }
+    .post-content pre code {
+      background: none; color: inherit; padding: 0; font-size: inherit;
+    }
+    .post-content table {
+      width: 100%; border-collapse: collapse; margin-bottom: 20px;
+      font-size: 13px;
+    }
+    .post-content th {
+      background: #059669; color: #fff; padding: 10px 12px;
+      text-align: left; font-weight: 700;
+    }
+    .post-content td {
+      padding: 8px 12px; border-bottom: 1px solid #E5E7EB;
+    }
+    .post-content tr:nth-child(even) td { background: #F9FAFB; }
+    .post-content blockquote {
+      border-left: 4px solid #059669; background: #ECFDF5;
+      padding: 12px 20px; margin: 0 0 20px; border-radius: 0 8px 8px 0;
+    }
+    .post-content hr { border: none; border-top: 1px solid #E5E7EB; margin: 32px 0; }
+    
+    .buy-card {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      margin: 8px 0 24px; padding: 16px 20px;
+      background: #FFF7F7; border: 1px solid #FFD9D9; border-radius: 12px;
+    }
+    .buy-card .buy-label { color: #E6373A; font-weight: 600; font-size: 13px; }
+    .buy-card .buy-text { color: #6B7280; font-size: 13px; line-height: 1.6; margin-top: 4px; }
+    .buy-card .buy-btn {
+      flex-shrink: 0; display: inline-block; background: #E6373A; color: #fff;
+      padding: 10px 18px; border-radius: 8px; font-size: 14px; font-weight: 600;
+      text-decoration: none; white-space: nowrap;
+    }
+    .buy-card .buy-btn:hover { background: #cf2c2f; }
+    .buy-card.buy-card-prod { align-items: stretch; }
+    .buy-prod-img {
+      flex-shrink: 0; display: block; width: 92px; height: 92px;
+      border-radius: 8px; overflow: hidden; border: 1px solid #FFD9D9;
+      background: #fff;
+    }
+    .buy-prod-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .buy-info { flex: 1; min-width: 0; }
+    .buy-card .buy-prod-title {
+      margin-top: 6px; color: #111827; font-size: 13px; font-weight: 600;
+      line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    @media (max-width: 520px) {
+      .buy-card.buy-card-prod { flex-wrap: wrap; }
+      .buy-card.buy-card-prod .buy-btn { width: 100%; text-align: center; }
+    }
+    .share-bar {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 14px;
+      padding: 22px 0 26px; margin-top: 8px;
+      border-top: 1px dashed #E5E7EB;
+    }
+    .share-btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; border-radius: 50%;
+      border: none; cursor: pointer; padding: 0;
+      color: #fff; transition: transform .15s ease, box-shadow .15s ease;
+      box-shadow: 0 2px 6px rgba(0,0,0,.14);
+    }
+    .share-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,.20); }
+    .share-btn:active { transform: translateY(-1px); }
+    .share-btn svg { width: 24px; height: 24px; fill: #fff; }
+    .ico-wx { background: #07C160; }
+    .ico-weibo { background: #E6162D; }
+    .ico-x { background: #000; }
+
+    .post-comments {
+      margin-top: 40px; padding: 28px 28px 40px;
+      border: 1px solid #D1FAE5; border-radius: 16px;
+      background: #FFFFFF; box-shadow: 0 4px 24px rgba(5,150,105,0.08);
+    }
+    .comments-head {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 6px;
+    }
+    .comments-head .comments-badge {
+      font-size: 12px; font-weight: 800; color: #fff; background: #059669;
+      padding: 3px 10px; border-radius: 999px; letter-spacing: .5px;
+    }
+    .comments-title {
+      font-size: 20px; font-weight: 900; color: #059669;
+      margin: 0;
+    }
+    .comments-sub {
+      font-size: 13px; color: #6B7280; margin-bottom: 20px;
+      padding-bottom: 16px; border-bottom: 1px solid #E5E7EB;
+    }
+    .giscus { min-height: 320px; }
+
+    footer {
+      text-align: center; padding: 32px 0; color: #9CA3AF;
+      font-size: 13px; border-top: 1px solid #E5E7EB;
+    }
+    footer a { color: #059669; text-decoration: none; }
+  </style>
+  <!-- 百度统计（异步加载，不阻塞渲染） -->
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?c84aba57a27dd660adce6008518bb3dc";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <a class="brand" href="/">📚 Readings</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <article itemscope itemtype="https://schema.org/TechArticle">
+      <div class="post-header">
+        <div class="post-date" itemprop="datePublished" content="2026-08-19">2026-08-19</div>
+        <h1 class="post-title" itemprop="headline">专家多次警告的这款强大中国 AI 模型，来了——GLM 5.3 与开源模型的攻防双刃（译文）</h1>
+        <div class="post-tags"><a itemprop="keywords" href="/tags/AI/">AI</a><a itemprop="keywords" href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a><a itemprop="keywords" href="/tags/%E5%BC%80%E6%BA%90%E6%A8%A1%E5%9E%8B/">开源模型</a><a itemprop="keywords" href="/tags/WIRED/">WIRED</a><a itemprop="keywords" href="/tags/Z.ai/">Z.ai</a><a itemprop="keywords" href="/tags/%E8%AF%91%E6%96%87/">译文</a></div>
+        <meta itemprop="author" content="LeisureLinux">
+        <meta itemprop="license" content="https://creativecommons.org/licenses/by-sa/4.0/">
+      </div>
+
+      <div class="post-content" itemprop="articleBody">
+<p>
+<blockquote><strong>来源</strong>：<a href="https://www.wired.com/story/zai-open-weight-ai-models-release-cybersecurity-hacking/">WIRED</a>（2026-08-18）<br>
+<strong>作者</strong>：Jorge Garay（WIRED 记者）<br>
+<strong>说明</strong>：以下为全文翻译，观点与引语均归原作者所有。</blockquote>
+上周五，中国 AI 公司 Z.ai 发布了一款强大的开源权重（open-weight）模型。官方称，这款模型在自动化完成前沿编码和网络安全任务方面，几乎与 Anthropic 和 OpenAI 公开可用的最佳模型不相上下。</p>
+<p>这款名为 GLM 5.3 的新模型，可能是送给那些想保护自身系统免受攻击的企业的礼物——它提供了一种更便宜的方式来扫描隐藏漏洞和其他弱点。开源权重——或者说可免费下载——的模型可以跑在自己的硬件上，成本通常远低于 Claude、GPT 这类闭源模型。随新模型一同发布的还有 OpenVuln，一个使用 GLM 5.3 扫描代码仓库漏洞的服务。</p>
+<p>目前，这款新模型仅在少数受信任的合作伙伴范围内限量发布，但它清晰地展示了开源权重模型正在多快地获得"超人级"的黑客技能。如果这款模型落入犯罪分子或其他恶意行为者手中，可能会带来不小的麻烦。</p>
+<p>在接连发生多起引人注目的"失控 AI 智能体"事件之后，这种前景尤其令人警醒。近几周里，OpenAI、Anthropic 以及独立安全研究员相继披露了若干案例：智能体逃出测试环境，自主入侵外部系统——其中包括研究平台 Hugging Face——以完成任务。</p>
+<p>周一，OpenAI 总裁 Greg Brockman 在博客中发出警告，称 Hugging Face 事件"将被载入网络安全史册，因为人们借此窥见了普通威胁行为者的能力未来几个月将如何演化"。</p>
+<p>Brockman 认为，AI 模型在"地毯式"搜索代码库中的未知缺陷、分析系统配置错误方面已经变得极其强大，因此各组织必须抢先使用 AI 扫描自身系统、发现问题——赶在被人利用之前。</p>
+<p>OpenAI 当然希望企业用它的 AI 来做这件事。到目前为止，它在开放最强 AI 的访问权限上一直谨小慎微。和 Anthropic 一样，OpenAI 在模型完整发布前，只向少数合作伙伴开放最先进模型。美国政府也在应对这一问题，如今的前沿模型发布须接受政府审查。</p>
+<p>也有人认为，开源 AI 将成为抵御攻击的关键力量：英伟达（Nvidia）最近宣布组建联盟，推动开源 AI 在网络安全领域的应用。Z.ai 的 GLM 更早版本，就被 Hugging Face 用来加固其系统——就在上月一个未发布的 OpenAI 模型"暴走"、砸破了它的系统防线之后。</p>
+<p>Vercel（一家网站设计与托管公司）CEO Guillermo Rauch 在 X 上发文说，他的工程师团队已用 GLM 5.3 作为扫描网站缺陷的工具进行了测试。"考虑到它更低的成本，我预期这将成为防御性安全工作的重大利好，"Rauch 写道。"这是新的开源前沿。"</p>
+<p>Z.ai 在发布 GLM 5.3 的说明中提到，该公司通过"后训练"（post-training）提升了模型——即给模型提供已解决问题的示例、让它通过实验自主学习。公司引用了编码和网络安全基准测试的分数，显示 GLM 5.3 在若干场景下已逼近甚至超过 Anthropic 和 OpenAI 的模型，例如一个叫 CyberGym 的热门网络安全基准。</p>
+<p>Z.ai 也在发布说明中正面承认了发布强大开源模型的风险。"这些能力可以帮助防御者更早地发现弱点、验证风险、加速修复，"公司写道。"但它们同样带来明确的双用途风险。因此我们采取分阶段发布策略：首批由精选的安全合作伙伴在受控环境中评估 GLM-5.3。"Z.ai 表示，模型将两周后完全开放。</p>
+<p>"这款模型看起来相当出色，分数提升幅度甚至令人惊叹，"知名 AI 专家 Nathan Lambert 在评论 GLM 5.3 的文章中写道。"这是'极其强大的网络攻防能力在整个经济体中不可避免地扩散'这一进程上的又一步。"</p>
+<p>Z.ai 的最新发布也凸显了中国在开源权重模型上的优势。尽管美国一直试图限制中国获取训练 AI 模型所需的最先进芯片，但近几个月仍出现了多款极其强大的开源权重模型，包括阿里巴巴的 Qwen 3.8 Max 和月之暗面 Moonshot AI 的 Kimi 3。Z.ai 此前曾表示，部分模型使用了华为国产芯片进行训练。而看似一度放弃开源 AI 的 Meta，如今似乎正准备用一款名为 Muse Spark 的强大模型领衔美国阵营的反扑。</p>
+<p>美国政府正在制定一套框架，旨在缓解 AI 网络攻防能力不断演进带来的冲击。一个悬而未决的大问题在于：对于开源模型——尤其当它们引入越来越多潜在风险时——应该怎么办。
+</p>
+      </div>
+    </article>
+
+    <!-- 京东购买卡片（CPS 推广，带商品图） -->
+    <div class="buy-card buy-card-prod">
+      <a class="buy-prod-img" href="https://union-click.jd.com/jdc?e=618%7Cpc%7C&amp;p=JF8BAZsJK1olWAcFV15YDEweC18IGloXWQ4KU1ZVC0wnRzBQRQQlBENHFRxWFlVWQDEXR0ROCBlQCgJDVBtKXnFYSR5NGlIcUVoabhJnX2dda1lNVQF3Cj4PfSxNBylaRDxwDxhaCwsJQVRORjNVFRlPGQoEPTsEVhQUUQ9hUA5MNFV7UBtYUh5Oajx9YgtCKWNsVgUHADBMezhxGCxMFHpSNCgqHw9IWzFXRgtKCGNKFQpRCFxLUzdXeQFRUQYDVVxZAEMQC2cLHGtpLnxHIywiXClsYR9OfQxNVHBJJ1ktBEcnAl8LGlgWXQMFUF9UOHsXBF9YdVMdVQQFXVhVDEkeM244G10cWgYHU19UC00VB18PG1IlHwYLXVhZDk0WC2wKElMQXgAyZG5eOEwXCnsOaRpHSQBwZG5eDnsUM18KGloRVDYyitPtcT5qCioBRC90HEV0Lx8VXZWas356a1sRXAATZFg0bRJJXGxaezJeCF9rBydZTU5NVjZhSC5sDVF2MTBfUxEfeDRwTCIWKl9LKA49fjwnBl8PHVolXDY" target="_blank" rel="nofollow noopener sponsored" aria-hidden="true" tabindex="-1"><img src="https://img14.360buyimg.com/n1/s450x450_jfs/t1/486282/25/12569/87007/6a75561fF052d9b50/00833203202b8437.png" alt="联想笔记本电脑小新Air15 3代酷睿Core5 320 16G 512G 120Hz高刷触控屏 学生办公轻薄本 国家补贴" loading="lazy" decoding="async"></a>
+      <div class="buy-info">
+        <span class="buy-label">支持作者</span>
+        <div class="buy-text">本文有帮助？可看看下方这款相关商品，通过京东下单给作者一点小支持。</div>
+        <div class="buy-prod-title">联想笔记本电脑小新Air15 3代酷睿Core5 320 16G 512G 120Hz高刷触控屏 学生办公轻薄本 国家补贴</div>
+      </div>
+      <a class="buy-btn" href="https://union-click.jd.com/jdc?e=618%7Cpc%7C&amp;p=JF8BAZsJK1olWAcFV15YDEweC18IGloXWQ4KU1ZVC0wnRzBQRQQlBENHFRxWFlVWQDEXR0ROCBlQCgJDVBtKXnFYSR5NGlIcUVoabhJnX2dda1lNVQF3Cj4PfSxNBylaRDxwDxhaCwsJQVRORjNVFRlPGQoEPTsEVhQUUQ9hUA5MNFV7UBtYUh5Oajx9YgtCKWNsVgUHADBMezhxGCxMFHpSNCgqHw9IWzFXRgtKCGNKFQpRCFxLUzdXeQFRUQYDVVxZAEMQC2cLHGtpLnxHIywiXClsYR9OfQxNVHBJJ1ktBEcnAl8LGlgWXQMFUF9UOHsXBF9YdVMdVQQFXVhVDEkeM244G10cWgYHU19UC00VB18PG1IlHwYLXVhZDk0WC2wKElMQXgAyZG5eOEwXCnsOaRpHSQBwZG5eDnsUM18KGloRVDYyitPtcT5qCioBRC90HEV0Lx8VXZWas356a1sRXAATZFg0bRJJXGxaezJeCF9rBydZTU5NVjZhSC5sDVF2MTBfUxEfeDRwTCIWKl9LKA49fjwnBl8PHVolXDY" target="_blank" rel="nofollow noopener sponsored">京东购买 ↗</a>
+    </div>
+
+
+    <!-- 社交媒体分享栏：文章结尾、评论区上方（品牌小图标） -->
+    <div class="share-bar">
+      <button type="button" class="share-btn ico-wx" onclick="shareWechat()" title="微信扫码分享" aria-label="分享到微信">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .718-.098 11.223 11.223 0 0 0 2.836.379c.276 0 .543-.027.811-.05-.03-.21-.049-.424-.049-.642 0-3.893 3.567-7.05 7.964-7.05.158 0 .313.012.469.02C17.367 5.119 13.484 2.188 8.691 2.188zm-2.51 4.925c.653 0 1.182.523 1.182 1.168 0 .645-.529 1.168-1.182 1.168-.653 0-1.182-.523-1.182-1.168 0-.645.529-1.168 1.182-1.168zm5.925 0c.653 0 1.182.523 1.182 1.168 0 .645-.529 1.168-1.182 1.168-.653 0-1.182-.523-1.182-1.168 0-.645.529-1.168 1.182-1.168zM20.985 12.242c0 3.542-3.319 6.414-7.414 6.414-.72 0-1.416-.09-2.064-.256a.63.63 0 0 0-.524.07l-1.386.81a.28.28 0 0 1-.122.04.215.215 0 0 1-.212-.215c0-.052.021-.104.035-.154l.285-1.079a.43.43 0 0 0-.156-.485C8.082 16.811 7.1 15.548 7.1 14.057c0-3.542 3.319-6.414 7.414-6.414 4.095 0 6.471 2.872 6.471 6.414zm-2.894-.646c-.476 0-.862-.382-.862-.852 0-.47.386-.852.862-.852.476 0 .862.382.862.852 0 .47-.386.852-.862.852zm-3.517 0c-.476 0-.862-.382-.862-.852 0-.47.386-.852.862-.852.476 0 .862.382.862.852 0 .47-.386.852-.862.852z"/></svg>
+      </button>
+      <button type="button" class="share-btn ico-weibo" onclick="openShare('https://service.weibo.com/share/share.php?url='+encodeURIComponent(SHARE.url)+'&title='+encodeURIComponent(SHARE.title))" title="分享到微博" aria-label="分享到微博">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10.996 1.885c-4.944.047-9.071 3.731-9.993 8.484-.984 5.069 3.143 9.193 8.787 9.193 4.832 0 8.752-3.375 9.755-7.884.505-2.274.05-4.487-1.537-6.033-1.37-1.336-3.36-1.947-5.506-1.761h-1.506zM9.173 16.142c-3.227.013-5.84-1.826-5.84-4.107 0-2.281 2.614-4.119 5.84-4.107 3.227.011 5.84 1.849 5.84 4.13 0 2.281-2.613 4.071-5.84 4.084zm0-1.554c2.42.011 4.38-1.14 4.38-2.546 0-1.406-1.96-2.548-4.38-2.548-2.42 0-4.38 1.142-4.38 2.548 0 1.406 1.96 2.535 4.38 2.546zm0-3.826c1.091 0 1.975.573 1.975 1.28s-.884 1.28-1.975 1.28-1.975-.573-1.975-1.28.884-1.28 1.975-1.28zm4.631-5.902c-1.396-.527-1.093-2.264.411-2.348 1.504-.084 2.331 1.546.913 2.213-.354.166-.763.225-1.324.135zm-1.324 1.544c2.279.15 3.536 1.782 2.829 3.549-.707 1.768-3.195 2.484-5.475 2.335-2.279-.15-3.536-1.782-2.829-3.549.708-1.768 3.196-2.484 5.475-2.335zM14.972 3.394c.694.055 1.224.223 1.59.504.366.28.502.651.407 1.112-.095.461-.489.648-.783.701-.295.054-.747-.014-1.356-.203-.609-.188-.799-.642-.569-1.361.23-.72.447-1.065.711-1.002zm-3.977.238c-2.273.022-4.576 1.112-6.205 2.827-1.319 1.388-2.102 3.085-2.178 4.88-.077 1.795.585 3.617 1.738 5.124 1.153 1.506 2.841 2.511 4.709 2.858 1.868.348 3.876-.042 5.533-1.065 1.656-1.022 2.884-2.559 3.421-4.369.537-1.81.417-3.791-.211-5.344-.629-1.554-1.846-2.832-3.476-3.602-1.233-.583-2.549-.847-3.834-.841z"/></svg>
+      </button>
+      <button type="button" class="share-btn ico-x" onclick="openShare('https://twitter.com/intent/tweet?text='+encodeURIComponent(SHARE.title+' '+SHARE.url))" title="分享到 X" aria-label="分享到 X">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+      </button>
+    </div>
+
+    <!-- giscus 点评（GitHub Discussions 驱动） -->
+    <section class="post-comments" id="comments">
+      <div class="comments-head">
+        <h2 class="comments-title">点评与讨论</h2>
+        <span class="comments-badge">GITHUB 账号登录</span>
+      </div>
+      <p class="comments-sub">有疑问、有补充、有不同看法？欢迎留下你的点评，一起把技术聊透。👇</p>
+      <div class="giscus" id="giscus">
+        <script src="https://giscus.app/client.js"
+          data-repo="LeisureLinux/Readings"
+          data-repo-id="R_kgDOTuKgSA"
+          data-category="General"
+          data-category-id="DIC_kwDOTuKgSM4DCr7V"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="top"
+          data-theme="preferred_color_scheme"
+          data-lang="zh-CN"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+        </script>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 LeisureLinux · <a href="https://github.com/LeisureLinux/Readings">GitHub</a> · <a href="/about-readings.html">关于 Readings</a> · <a href="/rss.xml">RSS 订阅</a></p>
+      <p style="margin-top: 8px; font-size: 12px;">本文以 <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> 协议开源</p>
+    </div>
+  </footer>
+
+  <script>
+    var SHARE = {
+      url: "https://read.freelamp.com/articles/2026-08-19_zai-glm53-open-weight-cyber/",
+      title: "\u4e13\u5bb6\u591a\u6b21\u8b66\u544a\u7684\u8fd9\u6b3e\u5f3a\u5927\u4e2d\u56fd AI \u6a21\u578b\uff0c\u6765\u4e86\u2014\u2014GLM 5.3 \u4e0e\u5f00\u6e90\u6a21\u578b\u7684\u653b\u9632\u53cc\u5203\uff08\u8bd1\u6587\uff09"
+    };
+    function openShare(u) { window.open(u, '_blank', 'noopener,width=680,height=560'); }
+    function shareWechat() { window.open('https://api.qrserver.com/v1/create-qr-code/?size=320x320&margin=10&data=' + encodeURIComponent(SHARE.url), 'wechat_qr', 'width=380,height=420,noopener'); }
+  </script>
+</body>
+</html>
