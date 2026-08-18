@@ -16,6 +16,7 @@
 
 | 日期 | 标题 | 领域 |
 |------|------|------|
+| 2026-08-19 | [AI 无法解决的创新问题——HBR 研究人类瓶颈](https://read.freelamp.com/articles/2026-08-19_hbr-innovation-ai-cant-solve/) | AI · 创新 · 译文 |
 | 2026-08-19 | [战略制定迎来 AI 助推——HBR 解绑有界理性](https://read.freelamp.com/articles/2026-08-19_hbr_strategy-makes-ai-boost/) | 战略 · AI · 译文 |
 | 2026-08-19 | [数字经济的实体门店价值——HBR 研究](https://read.freelamp.com/articles/2026-08-19_hbr-physical-retail-stores-digital/) | 零售 · 数字化转型 · 译文 |
 | 2026-08-19 | [专家警告的中国 AI 模型来了——GLM 5.3 与开源模型的双刃剑](https://read.freelamp.com/articles/2026-08-19_zai-glm53-open-weight-cyber/) | AI · 网络安全 · 译文 |
