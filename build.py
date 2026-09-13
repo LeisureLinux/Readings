@@ -34,6 +34,16 @@ JD_BUY_URL = "https://union-click.jd.com/jdc?e=618%7Cpc%7C&p=JF8BAZsJK1olWAcFV15
 JD_BUY_TITLE = "联想笔记本电脑小新Air15 3代酷睿Core5 320 16G 512G 120Hz高刷触控屏 学生办公轻薄本 国家补贴"
 JD_BUY_IMG = "https://img14.360buyimg.com/n1/s450x450_jfs/t1/486282/25/12569/87007/6a75561fF052d9b50/00833203202b8437.png"
 
+# ================= 京东联盟 内嵌广告（union.js） =================
+# 由 union.jd.com 后台「获取推广代码」得到的「站内嵌入」广告位代码。
+# union.js 会在文章页自动渲染一个广告位，jd_union_pid 即推广位 ID。
+# 仅在文章页注入（ARTICLE_TEMPLATE 的 {jd_union_ad} 占位符）。
+JD_UNION_AD_HTML = (
+    '<script type="text/javascript">var jd_union_pid="1789265734813";'
+    'var jd_union_euid="";</script>\n'
+    '<script type="text/javascript" src="//ads-union.jd.com/static/js/union.js"></script>'
+)
+
 
 def jd_buy_html(url: str, title: str = "", img: str = "") -> str:
     """生成文章底部「京东购买」CPS 推广卡片；url 为空时返回空串（不渲染）。
@@ -532,6 +542,7 @@ ARTICLE_TEMPLATE = """<!DOCTYPE html>
       </div>
     </article>
 {jd_buy_html}
+{jd_union_ad}
 
     <!-- 社交媒体分享栏：文章结尾、评论区上方（品牌小图标） -->
     <div class="share-bar">
@@ -931,6 +942,7 @@ def build_article_page(article):
     return ARTICLE_TEMPLATE.format(
         analytics_snippet=analytics_html(),
         jd_buy_html=jd_buy_html(jd_url, jd_title, jd_img),
+        jd_union_ad=JD_UNION_AD_HTML,
         title=title,
         date=date_display,
         date_iso=date_iso,
