@@ -7,6 +7,53 @@
     <language>zh-CN</language>
     <atom:link href="https://read.freelamp.com/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>如何不再浪费人生——神经科学家谈多巴胺与注意力回收（译文）</title>
+      <link>https://read.freelamp.com/articles/2026-09-13_stop-wasting-your-life-dopamine/</link>
+      <guid isPermaLink="true">https://read.freelamp.com/articles/2026-09-13_stop-wasting-your-life-dopamine/</guid>
+      <pubDate>Sun, 13 Sep 2026 00:00:00 GMT</pubDate>
+      <author>LeisureLinux</author>
+      <description><![CDATA[翻译并解读神经科学家 Dr. Dominic Ng《How to Stop Wasting Your Life》。拆解多巴胺的'想要/喜欢'之分与奖励预测误差（Reward Prediction Error），说明变率强化为何最难戒断，并给出'先量再断—物理隔离—固定离线时段—低刺激活动填坑'四步法与高刺激 App 判据。]]></description>
+      <category>神经科学</category>
+      <category>多巴胺</category>
+      <category>注意力</category>
+      <category>手机成瘾</category>
+      <category>深度工作</category>
+      <category>译文</category>
+    </item>
+
+    <item>
+      <title>AI 会拥有意识吗？——《经济学人》封面社论的技术、法律与伦理警示</title>
+      <link>https://read.freelamp.com/articles/2026-08-25_could-ais-become-conscious-economist/</link>
+      <guid isPermaLink="true">https://read.freelamp.com/articles/2026-08-25_could-ais-become-conscious-economist/</guid>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 GMT</pubDate>
+      <author>LeisureLinux</author>
+      <description><![CDATA[深度解读 The Economist Leaders《Could AIs become conscious?》。从Transformer架构与拟真意识的本质差异、法律人格陷阱、严格责任归属，到产品设计中的防拟人化规范，给出技术架构师与治理视角的系统反思。]]></description>
+      <category>AI</category>
+      <category>The Economist</category>
+      <category>意识</category>
+      <category>法律治理</category>
+      <category>商业伦理</category>
+      <category>译文</category>
+      <category>拟人化</category>
+    </item>
+
+    <item>
+      <title>为什么投资人愿意投一个‘不刚需、不高频、小众’的洗衣喷雾？——WashWise 案例深度解读</title>
+      <link>https://read.freelamp.com/articles/2026-08-25_washwise-between-wear-clothing-care/</link>
+      <guid isPermaLink="true">https://read.freelamp.com/articles/2026-08-25_washwise-between-wear-clothing-care/</guid>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 GMT</pubDate>
+      <author>LeisureLinux</author>
+      <description><![CDATA[基于 Business Insider 报道与官方发布，从品类定义、创始人交易员思维、战略投资者阵容、ESG 叙事与消费趋势，深度分析 WashWise 为何能在 Pre-Seed 阶段获得 FJ Labs 等背书，并探讨投资人真正看中的杠杆点。]]></description>
+      <category>商业</category>
+      <category>投资</category>
+      <category>DTC</category>
+      <category>消费品</category>
+      <category>创业</category>
+      <category>融资</category>
+      <category>品类创新</category>
+    </item>
+
+    <item>
       <title>AI 无法解决的创新问题——HBR 研究：当 AI 加深人类瓶颈时（译文）</title>
       <link>https://read.freelamp.com/articles/2026-08-19_hbr-innovation-ai-cant-solve/</link>
       <guid isPermaLink="true">https://read.freelamp.com/articles/2026-08-19_hbr-innovation-ai-cant-solve/</guid>

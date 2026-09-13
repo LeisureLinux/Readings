@@ -11,6 +11,24 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://read.freelamp.com/articles/2026-09-13_stop-wasting-your-life-dopamine/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/articles/2026-08-25_could-ais-become-conscious-economist/</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/articles/2026-08-25_washwise-between-wear-clothing-care/</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://read.freelamp.com/articles/2026-08-19_hbr-innovation-ai-cant-solve/</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -248,6 +266,31 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://read.freelamp.com/tags/The%20Economist/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E6%84%8F%E8%AF%86/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E6%B3%95%E5%BE%8B%E6%B2%BB%E7%90%86/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E5%95%86%E4%B8%9A%E4%BC%A6%E7%90%86/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E6%8B%9F%E4%BA%BA%E5%8C%96/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://read.freelamp.com/tags/%E4%B9%A6%E8%AF%84/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -388,7 +431,62 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://read.freelamp.com/tags/%E6%8A%95%E8%B5%84/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/DTC/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E6%B6%88%E8%B4%B9%E5%93%81/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E5%88%9B%E4%B8%9A/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E8%9E%8D%E8%B5%84/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E5%93%81%E7%B1%BB%E5%88%9B%E6%96%B0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://read.freelamp.com/tags/Writing/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E7%A5%9E%E7%BB%8F%E7%A7%91%E5%AD%A6/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E5%A4%9A%E5%B7%B4%E8%83%BA/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E6%B3%A8%E6%84%8F%E5%8A%9B/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E6%89%8B%E6%9C%BA%E6%88%90%E7%98%BE/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://read.freelamp.com/tags/%E6%B7%B1%E5%BA%A6%E5%B7%A5%E4%BD%9C/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
