@@ -16,12 +16,12 @@
 
 | 日期 | 标题 | 领域 |
 |------|------|------|
+| 2026-09-19 | [弗朗西斯·培根那些美丽的残渣——FT 艺术特写里的画室、Soho 与创作方法](https://read.freelamp.com/articles/2026-09-19_francis-bacon-beautiful-detritus/) | 艺术 · 创作方法 · 译文导读 |
 | 2026-09-13 | [金融时报那个有趣的 404 页面——让经济学家们集体背锅](https://read.freelamp.com/articles/2026-09-13_ft-404-economists/) | 网页观察 · 404 · 文案 |
 | 2026-09-13 | [如何不再浪费人生——神经科学家谈多巴胺与注意力回收](https://read.freelamp.com/articles/2026-09-13_stop-wasting-your-life-dopamine/) | 神经科学 · 注意力 · 译文 |
 | 2026-08-25 | [AI 会拥有意识吗？——《经济学人》封面社论的技术、法律与伦理警示](https://read.freelamp.com/articles/2026-08-25_could-ais-become-conscious-economist/) | AI · 治理 · 译文 |
 | 2026-08-25 | [为什么投资人愿意投一个"不刚需、不高频、小众"的洗衣喷雾？——WashWise 案例](https://read.freelamp.com/articles/2026-08-25_washwise-between-wear-clothing-care/) | 商业 · 投资 · 案例 |
 | 2026-08-19 | [森马服饰 2026H1 财报点评：中线增持建议](https://read.freelamp.com/articles/2026-08-19_senma-fashion-investment-report/) | 财报分析 · 投资建议 |
-| 2026-08-19 | [AI 无法解决的创新问题——HBR 研究人类瓶颈](https://read.freelamp.com/articles/2026-08-19_hbr-innovation-ai-cant-solve/) | AI · 创新 · 译文 |
 | 2026-08-05 | [我的读书笔记怎么写——Readings 笔记模板](https://read.freelamp.com/articles/2026-08-05_reading-note-template/) | 阅读方法 · 方法论 |
 
 👉 [**查看全部笔记 →**](https://read.freelamp.com)
