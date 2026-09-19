@@ -37,23 +37,30 @@ readings/
 │       ├── article.md           # 笔记正文
 │       └── metadata.yaml        # 元数据（标题、标签、SEO 描述）
 ├── scripts/                     # 辅助脚本（如提交 sitemap 到 GSC）
-├── build.py                     # 静态站点构建脚本（Python）
+├── build.py                     # 静态站点构建脚本（Python，本地运行）
 ├── llms.txt                     # LLM 友好的站点索引
-└── .github/workflows/deploy.yml # GitHub Actions 部署到 Pages
+└── docs/                        # 构建产物（提交进仓库，Pages 直接发布）
 ```
+
+> ⚠️ 本仓库**没有 GitHub Actions workflow**。`docs/` 由本地 `build.py` 生成后提交，由 GitHub Pages 直接从 `main` 分支的 `/docs` 目录发布（legacy 模式）。
 
 ## ✍️ 如何发布一篇笔记
 
 1. 在 `articles/` 下新建 `YYYY-MM-DD_slug/` 目录；
 2. 编写 `article.md`（正文）与 `metadata.yaml`（标题/日期/标签/summary/description）；
-3. `git add . && git commit -m "..." && git push`；
-4. GitHub Actions 自动执行 `build.py` 并部署到 `read.freelamp.com`。
+3. 本地运行 `python build.py` 重新生成 `docs/`；
+4. `git add . && git commit -m "..." && git push`；
+5. GitHub Pages 从 `main` 的 `/docs` 目录直接发布，推送后 1–2 分钟生效。
+
+> 第 3 步不能省：Pages 发布的是 `docs/` 里的现成 HTML，不是 `articles/` 源文件。漏了构建，线上就不会出现新文章。
 
 ## 🛠️ 本地构建
 
 ```bash
 python build.py   # 生成 docs/ 静态站点，可直接本地预览
 ```
+
+> 该命令会每次**清空并重建** `docs/`，因此请确保 `articles/` 与 `llms.txt` 等源文件已就位。
 
 ## 📜 协议
 
